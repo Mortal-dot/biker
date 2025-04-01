@@ -235,3 +235,122 @@
         height: auto; /* Permite que el video ajuste su altura en pantallas pequeñas */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- REINICIO PARA MÓVILES --------------- */
+
+/* Asegúrate de que no haya márgenes, paddings o configuraciones previas que puedan interferir en el diseño en móviles */
+@media (max-width: 767px) {
+    /* Reiniciamos márgenes y paddings en dispositivos móviles */
+    body, .container-fluid, .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 10px 0; /* Reducir padding en el navbar */
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Logo en el header */
+    .navbar-brand img {
+        width: 80px; /* Reducir el tamaño del logo en móviles */
+        height: auto;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto del logotipo */
+        margin-left: 10px;
+    }
+
+    .navbar-toggler {
+        display: block; /* Mostrar el icono del menú en móvil */
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-toggler img {
+        width: 25px; /* Ajustar tamaño del icono de menú */
+        height: auto;
+    }
+
+    /* Cambiar el comportamiento de la barra de navegación */
+    .navbar-collapse {
+        flex-direction: column; /* Establecer la navegación en columna */
+        width: 100%; /* Asegurarnos que ocupe el 100% de ancho */
+        background-color: #333; /* Fondo oscuro en móviles */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Los elementos de la nav estarán en columna */
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Separar los items de la nav */
+    }
+
+    /* Iconos de la barra de navegación */
+    .nav-link img {
+        width: 24px; /* Ajustar el tamaño de los iconos */
+        height: auto;
+    }
+
+    /* Mostrar el carrito de compras y el formulario de checkout en móvil */
+    #cart {
+        top: 100px; /* Ajustar la posición del carrito en móviles */
+        right: 10px;
+        width: 90%; /* Ocupa el 90% del ancho */
+        padding: 15px;
+    }
+
+    /* Formulario de checkout ajustado a móvil */
+    #checkout-form-container {
+        width: 100%; /* Asegurarnos de que el formulario ocupe todo el ancho */
+        padding: 20px;
+    }
+
+    /* Ajustar el botón "Pagar" */
+    .cart_button {
+        padding: 12px; /* Aumentar padding para que el botón sea más accesible */
+        font-size: 1.1rem; /* Mejorar la legibilidad */
+    }
+
+    /* Ajustar la imagen del carrito y el formulario en móvil */
+    #cart, #checkout-form-container {
+        display: none; /* Ocultar por defecto en móviles hasta que el usuario haga click */
+    }
+}
+
+/* Los estilos de escritorio se mantienen como están */
+
