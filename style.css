@@ -142,9 +142,9 @@ footer {
     background-color: azure;
     border: 2px solid black;
     border-radius: 10px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin: 0 auto;
     margin-bottom: 10%;
+    width: 70%; /* Contenedor más estrecho para mejor visualización en pantallas grandes */
 }
 
 .form-container {
@@ -163,41 +163,36 @@ footer {
 
 /* Asegura que el video ocupe un tamaño adecuado */
 .custom-img-navidad {
-    width: 100%;                    /* El video ocupará todo el ancho disponible del contenedor */
-    height: 400px;                  /* Ajusta la altura del video a un valor mayor (400px) */
-    object-fit: cover;              /* Hace que el video cubra el área sin distorsionar */
-    display: block;                 /* Asegura que el video se muestre correctamente */
-    margin: 0 auto;                 /* Asegura que el video se centre horizontalmente */
-
-    /* Sombra negra más intensa */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Sombra negra más pronunciada */
-
-    /* Bordes morados con un brillo sutil */
-    border: 4px solid transparent;   /* Borde transparente por defecto */
-    background-image: linear-gradient(white, white), radial-gradient(circle, #a8a8ff, #6c2bd0); /* Gradiente morado en los bordes */
-    background-origin: border-box;  /* Aplica el gradiente solo en el borde */
-    background-clip: content-box, border-box; /* Asegura que el gradiente se quede solo en el borde */
-    transition: all 0.3s ease;      /* Transición suave para el efecto hover */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    border: 4px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle, #a8a8ff, #6c2bd0);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: all 0.3s ease;
 }
 
 /* Efecto al pasar el ratón para resaltar el video */
 .custom-img-navidad:hover {
-    /* Aumento de la sombra y del borde al pasar el ratón */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1); /* Sombra negra más profunda y más visible */
-    transform: scale(1.05); /* Aumento ligero del tamaño para resaltar */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1);
+    transform: scale(1.05);
     border: 4px solid transparent;
-    background-image: linear-gradient(white, white), radial-gradient(circle, #c2a9ff, #9a3edc); /* Gradiente morado más intenso en el borde */
+    background-image: linear-gradient(white, white), radial-gradient(circle, #c2a9ff, #9a3edc);
 }
 
 /* Estilo para el contenedor del video */
 #navidad-video {
     padding: 0;
-    background-color: #f8f9fa;  /* Color de fondo opcional */
-    width: 100%;                 /* Asegura que el contenedor ocupe el 100% del ancho */
-    height: auto;                /* El contenedor se ajustará a la altura del video */
-    max-width: 100%;             /* El contenedor tendrá un ancho máximo del 100% */
-    display: flex;               /* Usamos flex para centrar el contenido */
-    justify-content: center;     /* Centra el video horizontalmente */
+    background-color: #f8f9fa;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Ajusta la apariencia de los títulos */
@@ -214,7 +209,7 @@ footer {
 /* Asegura que la fila de videos se ajuste correctamente */
 .row {
     display: flex;
-    justify-content: center; /* Centra los videos dentro de la fila */
+    justify-content: center;
 }
 
-/* Aquí no se añaden estilos específicos para móviles. Todos los estilos se mantendrán consistentes a través de todos los tamaños de pantalla */
+/* Si quieres asegurar que los videos no sobrepasen la pantalla, puedes agregar un ajuste para pantallas pequeñas */
