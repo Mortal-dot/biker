@@ -296,31 +296,24 @@ footer {
 
 
 
-/* Este bloque se aplica solo en pantallas pequeñas (móviles) */
+
+
+
+/* En pantallas móviles (menos de 768px) */
 @media (max-width: 767px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .col-12 {
-        width: 33.33%; /* Tres productos por fila */
-        padding: 5px; /* Espacio entre columnas */
-    }
-
-    .sc-product-item {
-        margin-bottom: 20px; /* Margen inferior entre productos */
+        width: 33.33%; /* Tres productos por fila en pantallas pequeñas */
+        padding: 5px;  /* Espacio entre columnas */
     }
 }
 
-/* Para pantallas mayores a 768px (tabletas, escritorios), Bootstrap ya maneja el comportamiento */
+/* En pantallas más grandes (mayores de 768px, como tabletas y PC) */
 @media (min-width: 768px) {
     .col-md-4 {
-        width: 33.33%; /* Tres productos por fila */
+        width: 33.33%; /* Tres productos por fila en pantallas medianas (tabletas) */
     }
 
     .col-lg-3 {
-        width: 25%; /* Cuatro productos por fila */
+        width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
     }
 }
-
