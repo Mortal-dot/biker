@@ -300,7 +300,7 @@ footer {
     }
 
     .col-12 {
-        width: 33.33%; /* Tres productos por fila en pantallas pequeñas (móviles) */
+        width: 50%; /* Dos productos por fila en pantallas pequeñas (móviles) */
         padding: 5px;  /* Espaciado entre las columnas */
     }
 
@@ -323,4 +323,106 @@ footer {
     .col-lg-3 {
         width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos del carrito */
+#cart {
+    position: absolute;
+    top: 125px; 
+    right: 10px;
+    background-color: #333; 
+    padding: 10px;
+    display: none; 
+    width: 200px;
+    z-index: 1; 
+}
+
+.cart_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.cart_li {
+    margin-bottom: 10px;
+}
+
+.cart_h2, .cart_button {
+    color: white; 
+}
+
+.cart_button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilos del formulario de checkout */
+#checkout-form-container {
+    position: fixed; 
+    top: 105px; 
+    right: 10px; 
+    width: 90%; 
+    max-width: 300px; 
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+/* ---------------SOBRE NOSOTROS--------------- */
+
+.hx_font {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2_nosotros {
+    font-size: 2rem;
+    color: #b42525;
+    margin-bottom: 2%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text_nosotros {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.h3_sucursales {
+    font-size: 1.8rem;
+    color: #256db4;
+    margin-bottom: 3%;
+}
+
+.ul_sucursales {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li_sucursales {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    color: #333;
 }
