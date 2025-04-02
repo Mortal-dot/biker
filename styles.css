@@ -438,3 +438,59 @@ footer {
 .navbar-brand h1 {
     color: #000; /* Negro */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General: Estilos comunes para todas las pantallas */
+.header-section {
+    background-color: #333; /* Fondo oscuro para el header */
+    color: white;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Hacer que el logo sea más pequeño en pantallas móviles */
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* Hacer que el nombre del sitio sea más pequeño en móviles */
+    .navbar-brand h1 {
+        font-size: 1.4rem; /* Reducir el tamaño de la fuente en móviles */
+        margin-left: 10px; /* Agregar espacio al lado del logo */
+    }
+
+    
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Un poco más grande que en móviles */
+    }
+
+    .navbar-nav .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #cart {
+        width: 300px; /* Aumentar tamaño del carrito en tabletas */
+    }
+}
+}
+
+
