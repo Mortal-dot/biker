@@ -1,0 +1,729 @@
+/* ---------------INICIO--------------- */
+
+.dark_color {
+    background-color: black;
+}
+
+.text {
+    color:white;
+}
+
+.body {
+    background-color: rgb(240, 248, 255);
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title_style {
+    background-color: #f11515;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.productsBorders {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 768px) {
+    .custom-img {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .custom-img-nosotros {
+        max-width: 60%;
+    }
+    .custom-img-secciones {
+        max-width: 70%;
+    }
+    .custom-img-navidad {
+        max-width: 90%;
+    }
+}
+
+/* Estilos generales para html y body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.body {
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Estilos del carrito */
+#cart {
+    position: absolute;
+    top: 125px; 
+    right: 10px;
+    background-color: #333; 
+    padding: 10px;
+    display: none; 
+    width: 200px;
+    z-index: 1; 
+}
+
+.cart_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.cart_li {
+    margin-bottom: 10px;
+}
+
+.cart_h2, .cart_button {
+    color: white; 
+}
+
+.cart_button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilos del formulario de checkout */
+#checkout-form-container {
+    position: fixed; 
+    top: 105px; 
+    right: 10px; 
+    width: 90%; 
+    max-width: 300px; 
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+/* ---------------SOBRE NOSOTROS--------------- */
+
+.hx_font {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2_nosotros {
+    font-size: 2rem;
+    color: #b42525;
+    margin-bottom: 2%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text_nosotros {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.h3_sucursales {
+    font-size: 1.8rem;
+    color: #256db4;
+    margin-bottom: 3%;
+}
+
+.ul_sucursales {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li_sucursales {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    color: #333;
+}
+
+/* ---------------contactos--------------- */
+
+.section_contactos {
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #b42525;
+}
+
+/* Asegura que el video ocupe un tamaño adecuado */
+.custom-img-navidad {
+    width: 100%;                    /* El video ocupará todo el ancho disponible del contenedor */
+    height: 400px;                  /* Ajusta la altura del video a un valor mayor (400px) */
+    object-fit: cover;              /* Hace que el video cubra el área sin distorsionar */
+    display: block;                 /* Asegura que el video se muestre correctamente */
+    margin: 0 auto;                 /* Asegura que el video se centre horizontalmente */
+    
+    /* Sombra negra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra negra suave */
+    
+    /* Bordes morados con un brillo sutil */
+    border: 4px solid transparent;   /* Borde transparente por defecto */
+    background-image: linear-gradient(white, white), radial-gradient(circle, #a8a8ff, #6c2bd0); /* Gradiente morado en los bordes */
+    background-origin: border-box;  /* Aplica el gradiente solo en el borde */
+    background-clip: content-box, border-box; /* Asegura que el gradiente se quede solo en el borde */
+    transition: all 0.3s ease;      /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el ratón para resaltar el video */
+.custom-img-navidad:hover {
+    /* Aumento de la sombra y del borde al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra negra más pronunciada */
+    transform: scale(1.05); /* Aumento ligero del tamaño para resaltar */
+    border: 4px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle, #c2a9ff, #9a3edc); /* Gradiente morado más intenso en el borde */
+}
+
+/* Estilo para el contenedor del video */
+#navidad-video {
+    padding: 0;
+    background-color: #f8f9fa;  /* Color de fondo opcional */
+    width: 100%;                 /* Asegura que el contenedor ocupe el 100% del ancho */
+    height: auto;                /* El contenedor se ajustará a la altura del video */
+    max-width: 100%;             /* El contenedor tendrá un ancho máximo del 100% */
+    display: flex;               /* Usamos flex para centrar el contenido */
+    justify-content: center;     /* Centra el video horizontalmente */
+}
+
+/* Ajusta la apariencia de los títulos */
+.title_style {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hx_font {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Asegura que la fila de videos se ajuste correctamente */
+.row {
+    display: flex;
+    justify-content: center; /* Centra los videos dentro de la fila */
+}
+
+/* Estilos generales para las secciones */
+section {
+  padding: 50px 0;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.productsBorders {
+  border: 1px solid #ddd; /* Agrega borde entre secciones */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.productsBorders img {
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto;
+  flex-basis: 35%;
+}
+
+.productsBorders div {
+  flex-basis: 60%;
+}
+
+h2.title_style {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Títulos y párrafos */
+.hx_font {
+  font-family: "Arial", sans-serif;
+}
+
+.productsBorders h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.productsBorders p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  .productsBorders img {
+    flex-basis: 100%; /* Las imágenes ocuparán el 100% del ancho */
+    margin-bottom: 15px;
+  }
+
+  .productsBorders div {
+    flex-basis: 100%; /* El contenido textual ocupará el 100% del ancho */
+  }
+
+  .productsBorders h3 {
+    font-size: 1.3rem;
+  }
+
+  .productsBorders p {
+    font-size: 0.9rem;
+  }
+
+  h2.title_style {
+    font-size: 1.6rem;
+  }
+}
+
+/* Estilo para el carrusel */
+.owl-carousel {
+  display: flex;
+  justify-content: flex-start; /* Alineamos los elementos hacia el inicio */
+  align-items: center; /* Centrar verticalmente los elementos */
+  flex-direction: row; /* Hacemos que los elementos se dispongan en una fila (horizontal) */
+  gap: 20px; /* Añadimos un pequeño espacio entre los elementos */
+  margin-top: 50px; /* Añadimos espacio entre el header y el carrusel */
+}
+
+/* Imágenes del carrusel */
+.owl-carousel .item img {
+  max-width: 100%;  /* Las imágenes ocupan el 100% del ancho de su contenedor */
+  height: auto;     /* Mantiene la proporción de las imágenes */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+/* Efecto hover en las imágenes del carrusel */
+.owl-carousel .item img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos solo para dispositivos móviles */
+@media (max-width: 767px) {
+  .owl-carousel {
+    display: flex;
+    flex-direction: column; /* Disposición en columna (vertical) */
+    align-items: center; /* Centra las imágenes horizontalmente */
+    gap: 15px;  /* Espacio entre las imágenes */
+    width: 100%;
+    padding: 0 20px;  /* Añadimos algo de padding para que no toquen los bordes */
+  }
+
+  .owl-carousel .item {
+    width: 100%;   /* Las imágenes ocuparán el 100% del ancho del contenedor */
+    height: auto;  /* Ajustamos la altura automáticamente */
+    margin-right: 0; /* Eliminamos el margen derecho */
+  }
+
+  /* Hacemos las imágenes más grandes en móvil */
+  .owl-carousel .item img {
+    width: 100%;    /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto;   /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos solo para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Cambia la disposición para móviles, colocando los videos lado a lado */
+    #navidad-video .row {
+        display: flex;
+        justify-content: space-between; /* Espacio entre los dos videos */
+    }
+
+    /* Cada video ocupará el 49% del ancho */
+    #navidad-video .col-12 {
+        flex: 0 0 49%; /* Cada video ocupará el 48% del ancho disponible */
+    }
+
+    /* Estilo para los videos, aumentando el ancho */
+    #navidad-video .col-12 video {
+        width: 100%;  /* Los videos ocuparán el 100% del ancho disponible */
+        height: auto; /* Mantiene la altura en proporción, sin cambiarla */
+        object-fit: cover; /* Asegura que los videos cubran el área sin distorsionar */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Asegurar que las imágenes sean responsivas */
+.custom-img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Ajustar el tamaño de la imagen en móviles */
+    margin-bottom: 15px; /* Espaciado en la parte inferior de la imagen */
+}
+
+/* Estilizar el contenedor de los productos */
+.sc-product-item {
+    background-color: #f9f9f9; /* Fondo claro para los productos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    transition: transform 0.3s ease-in-out; /* Animación suave al pasar el mouse */
+    margin-right: 15px; /* Espacio entre los productos */
+}
+
+/* Efecto al pasar el mouse sobre el producto */
+.sc-product-item:hover {
+    transform: translateY(-10px); /* Levanta el producto cuando se pasa el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Títulos de los productos */
+.sc-product-item h4 {
+    font-size: 1.2rem;
+    color: #333; /* Color oscuro para los títulos */
+    font-weight: 600;
+    margin-bottom: 10px; /* Espaciado entre el título y la descripción */
+}
+
+/* Descripción de los productos */
+.sc-product-item p {
+    font-size: 1rem;
+    color: #666; /* Color gris claro para las descripciones */
+    margin-bottom: 15px; /* Espaciado entre la descripción y el botón */
+}
+
+/* Estilo para el botón de agregar al carrito */
+.sc-add-to-cart {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.sc-add-to-cart:hover {
+    background-color: #218838; /* Cambia el color del botón cuando se pasa el mouse */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .row-flex-mobile {
+        display: flex;
+        flex-direction: row; /* Alinea los productos en una fila horizontal */
+        overflow-x: auto; /* Permite el deslizamiento horizontal si hay desbordamiento */
+        gap: 15px; /* Espacio entre los productos */
+        justify-content: flex-start; /* Alinea los productos a la izquierda */
+    }
+
+    .col {
+        flex: 0 0 auto; /* Los productos se ajustan en una fila */
+        max-width: 200px; /* Limita el ancho de cada producto */
+    }
+
+    .sc-product-item {
+        margin-bottom: 20px; /* Espaciado entre las filas de productos */
+    }
+
+    .sc-add-to-cart {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho en móviles */
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sc-product-item {
+        margin: 10px; /* Margen para tabletas */
+    }
+
+    .custom-img {
+        max-width: 200px; /* Ajustar el tamaño de la imagen en tabletas */
+    }
+}
+
+/* Ajustes para pantallas grandes (escritorios) */
+@media (min-width: 992px) {
+    .sc-product-item {
+        margin: 20px; /* Más margen en pantallas grandes */
+    }
+
+    .custom-img {
+        max-width: 250px; /* Tamaño máximo de las imágenes en pantallas grandes */
+    }
+}
+
+
+
+
+/* General: Estilos comunes para todas las pantallas */
+.header-section {
+    background-color: #333; /* Fondo oscuro para el header */
+    color: white;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Hacer que el logo sea más pequeño en pantallas móviles */
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* Hacer que el nombre del sitio sea más pequeño en móviles */
+    .navbar-brand h1 {
+        font-size: 1.4rem; /* Reducir el tamaño de la fuente en móviles */
+        margin-left: 10px; /* Agregar espacio al lado del logo */
+    }
+
+    
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Un poco más grande que en móviles */
+    }
+
+    .navbar-nav .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #cart {
+        width: 300px; /* Aumentar tamaño del carrito en tabletas */
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General: Estilos comunes para todas las pantallas */
+footer {
+    background-color: #333; /* Fondo oscuro para el pie de página */
+    color: white;
+    padding: 10px 0;  /* Reducir el padding para hacerlo más compacto */
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Ajustar el tamaño del logo y el texto en dispositivos móviles */
+    footer .logo {
+        width: 50px;  /* Reducir más el tamaño del logo */
+        height: auto;
+    }
+
+    footer h3 {
+        font-size: 1.1rem; /* Reducir más el tamaño del texto */
+        margin-left: 10px; /* Agregar un pequeño margen al texto */
+    }
+
+    /* Hacer que los elementos del footer estén alineados de forma más sencilla */
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Alinear los elementos al centro */
+    }
+
+    footer .ps-5 {
+        padding-left: 0;  /* Eliminar el padding a la izquierda en pantallas pequeñas */
+    }
+
+    /* Ajustar los márgenes y espaciados entre los elementos */
+    footer .col-6 {
+        text-align: center;
+        margin-top: 5px; /* Reducir margen entre elementos */
+    }
+
+    footer .col-6 a {
+        margin: 0 8px;  /* Reducir el espaciado entre los íconos */
+    }
+
+    /* Ajustar el texto de copyright y creador */
+    footer .d-flex.justify-content-center {
+        margin-top: 5px; /* Reducir el margen superior */
+        font-size: 0.8rem; /* Reducir el tamaño de la fuente para hacerlo más compacto */
+    }
+
+    footer .text {
+        font-size: 0.7rem; /* Reducir aún más el tamaño de texto para "Creado por Xdeghost" */
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* Estilizar los enlaces de las redes sociales */
+    footer .col-6 a img {
+        width: 30px; /* Reducir el tamaño de los íconos de redes sociales */
+        height: auto;
+        background: transparent; /* Quitar el fondo negro de los íconos */
+        border-radius: 50%; /* Hacer los íconos circulares si tienen fondo */
+    }
+
+    /* Asegurarnos de que los íconos estén centrados correctamente */
+    footer .col-6 {
+        display: flex;
+        justify-content: center; /* Centrar los íconos de redes sociales */
+        align-items: center;
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer .logo {
+        width: 70px;  /* Hacer el logo más pequeño también en tabletas */
+    }
+
+    footer h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilos específicos para pantallas grandes (PC) */
+@media (min-width: 992px) {
+    /* Contenedor flex para las secciones */
+    .pc-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px; /* Reducido aún más el espacio entre la imagen y el texto */
+        margin-bottom: 30px; /* Separación entre las secciones */
+    }
+
+    /* Imagen dentro del contenedor */
+    .custom-img-secciones, .custom-img-nosotros {
+        width: 35%; /* Reducir el tamaño de la imagen al 35% */
+        height: auto;
+        object-fit: cover; /* Mantener la proporción de la imagen */
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+
+    /* Contenedor del texto */
+    .section-text {
+        width: 60%; /* El texto ocupará el 60% del contenedor */
+        line-height: 1.5;
+        margin-left: -300px; /* Aplicar margen negativo para mover el texto aún más a la izquierda */
+    }
+
+    /* Títulos y texto */
+    .section-text h3 {
+        font-size: 1.3rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px;
+        color: #333; /* Título con un color más oscuro */
+    }
+
+    .section-text p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        color: #555; /* Texto un poco más claro */
+    }
+}
