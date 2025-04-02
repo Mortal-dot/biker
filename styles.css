@@ -727,3 +727,23 @@ footer {
         color: #555; /* Texto un poco más claro */
     }
 }
+
+
+
+
+
+
+
+
+/* Estilos personalizados para móviles */
+@media (max-width: 767px) {
+    .col-12 {
+        width: 33.33%; /* Esto hará que cada columna ocupe un 33.33% del ancho */
+        padding: 0 5px; /* Agrega algo de espacio entre los productos */
+    }
+    
+    /* Para asegurar que los márgenes entre las imágenes no se acumulen */
+    .sc-product-item {
+        margin-bottom: 20px;
+    }
+}
