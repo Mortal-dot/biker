@@ -512,15 +512,7 @@ footer {
     font-style: normal;
 }
 
-.title_style {
-    background-color: #f11515;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    border: 2px solid black;
-    border-radius: 15px;
-    text-align: center;
-}
+
 
 .productsBorders {
     border: 2px solid black;
