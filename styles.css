@@ -279,3 +279,48 @@ footer {
         font-size: 1.4rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Asegurarse que los productos sean responsivos */
+@media (max-width: 767px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Asegura que los productos estén distribuidos de manera equitativa */
+    }
+
+    .col-12 {
+        width: 33.33%; /* Tres productos por fila en pantallas pequeñas (móviles) */
+        padding: 5px;  /* Espaciado entre las columnas */
+    }
+
+    .sc-product-item {
+        margin-bottom: 20px; /* Asegurar espaciado entre productos */
+    }
+
+    .sc-add-to-cart {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho del producto */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4 {
+        width: 33.33%; /* Tres productos por fila en pantallas medianas (tabletas) */
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
+    }
+}
