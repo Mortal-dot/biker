@@ -1,11 +1,8 @@
-
-
-
 /* Asegurar que las imágenes sean responsivas */
 .custom-img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Ajustar el tamaño de la imagen en móviles */
+    max-width: 200px; /* Ajustar el tamaño máximo de las imágenes en móviles */
     margin-bottom: 15px; /* Espaciado en la parte inferior de la imagen */
 }
 
@@ -56,19 +53,16 @@
     background-color: #218838; /* Cambia el color del botón cuando se pasa el mouse */
 }
 
-/* Ajustes para dispositivos móviles */
+/* Ajustes para dispositivos móviles (menos de 768px) */
 @media (max-width: 767px) {
-    .row-flex-mobile {
+    .row {
         display: flex;
-        flex-direction: row; /* Alinea los productos en una fila horizontal */
-        overflow-x: auto; /* Permite el deslizamiento horizontal si hay desbordamiento */
-        gap: 15px; /* Espacio entre los productos */
-        justify-content: flex-start; /* Alinea los productos a la izquierda */
+        flex-wrap: wrap;
     }
 
-    .col {
-        flex: 0 0 auto; /* Los productos se ajustan en una fila */
-        max-width: 200px; /* Limita el ancho de cada producto */
+    .col-12 {
+        width: 33.33%; /* Tres productos por fila en pantallas pequeñas */
+        padding: 5px; /* Espacio entre columnas */
     }
 
     .sc-product-item {
@@ -80,8 +74,12 @@
     }
 }
 
-/* Ajustes para tabletas y pantallas medianas */
+/* Ajustes para tabletas y pantallas medianas (768px a 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4 {
+        width: 33.33%; /* Tres productos por fila en pantallas medianas (tabletas) */
+    }
+
     .sc-product-item {
         margin: 10px; /* Margen para tabletas */
     }
@@ -91,8 +89,12 @@
     }
 }
 
-/* Ajustes para pantallas grandes (escritorios) */
+/* Ajustes para pantallas grandes (escritorios, 992px y más) */
 @media (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
+    }
+
     .sc-product-item {
         margin: 20px; /* Más margen en pantallas grandes */
     }
@@ -101,9 +103,6 @@
         max-width: 250px; /* Tamaño máximo de las imágenes en pantallas grandes */
     }
 }
-
-
-
 
 /* General: Estilos comunes para todas las pantallas */
 .header-section {
@@ -125,45 +124,80 @@
         margin-left: 10px; /* Agregar espacio al lado del logo */
     }
 
-    
-/* Ajustes para tabletas y pantallas medianas */
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-brand h1 {
-        font-size: 1.5rem; /* Un poco más grande que en móviles */
-    }
+    /* Ajustes para tabletas y pantallas medianas */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .navbar-brand h1 {
+            font-size: 1.5rem; /* Un poco más grande que en móviles */
+        }
 
-    .navbar-nav .nav-link img {
-        width: 30px;
-        height: 30px;
-    }
+        .navbar-nav .nav-link img {
+            width: 30px;
+            height: 30px;
+        }
 
-    #cart {
-        width: 300px; /* Aumentar tamaño del carrito en tabletas */
+        #cart {
+            width: 300px; /* Aumentar tamaño del carrito en tabletas */
+        }
     }
 }
+
+/* Estilos específicos para pantallas grandes (PC) */
+@media (min-width: 992px) {
+    /* Contenedor flex para las secciones */
+    .pc-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px; /* Reducido aún más el espacio entre la imagen y el texto */
+        margin-bottom: 30px; /* Separación entre las secciones */
+    }
+
+    /* Imagen dentro del contenedor */
+    .custom-img-secciones, .custom-img-nosotros {
+        width: 35%; /* Reducir el tamaño de la imagen al 35% */
+        height: auto;
+        object-fit: cover; /* Mantener la proporción de la imagen */
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+
+    /* Contenedor del texto */
+    .section-text {
+        width: 60%; /* El texto ocupará el 60% del contenedor */
+        line-height: 1.5;
+        margin-left: -300px; /* Aplicar margen negativo para mover el texto aún más a la izquierda */
+    }
+
+    /* Títulos y texto */
+    .section-text h3 {
+        font-size: 1.3rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px;
+        color: #333; /* Título con un color más oscuro */
+    }
+
+    .section-text p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        color: #555; /* Texto un poco más claro */
+    }
 }
 
+/* En pantallas móviles (menos de 768px) */
+@media (max-width: 767px) {
+    .col-12 {
+        width: 33.33%; /* Tres productos por fila en pantallas pequeñas */
+        padding: 5px;  /* Espacio entre columnas */
+    }
+}
 
+/* En pantallas más grandes (mayores de 768px, como tabletas y PC) */
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 33.33%; /* Tres productos por fila en pantallas medianas (tabletas) */
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .col-lg-3 {
+        width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
+    }
+}
 
 /* General: Estilos comunes para todas las pantallas */
 footer {
@@ -243,77 +277,5 @@ footer {
 
     footer h3 {
         font-size: 1.4rem;
-    }
-}
-
-
-
-
-
-
-
-
-/* Estilos específicos para pantallas grandes (PC) */
-@media (min-width: 992px) {
-    /* Contenedor flex para las secciones */
-    .pc-flex-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px; /* Reducido aún más el espacio entre la imagen y el texto */
-        margin-bottom: 30px; /* Separación entre las secciones */
-    }
-
-    /* Imagen dentro del contenedor */
-    .custom-img-secciones, .custom-img-nosotros {
-        width: 35%; /* Reducir el tamaño de la imagen al 35% */
-        height: auto;
-        object-fit: cover; /* Mantener la proporción de la imagen */
-        border-radius: 8px; /* Bordes redondeados para la imagen */
-    }
-
-    /* Contenedor del texto */
-    .section-text {
-        width: 60%; /* El texto ocupará el 60% del contenedor */
-        line-height: 1.5;
-        margin-left: -300px; /* Aplicar margen negativo para mover el texto aún más a la izquierda */
-    }
-
-    /* Títulos y texto */
-    .section-text h3 {
-        font-size: 1.3rem; /* Reducir el tamaño del título */
-        margin-bottom: 10px;
-        color: #333; /* Título con un color más oscuro */
-    }
-
-    .section-text p {
-        font-size: 0.9rem; /* Reducir el tamaño del texto */
-        color: #555; /* Texto un poco más claro */
-    }
-}
-
-
-
-
-
-
-
-
-/* En pantallas móviles (menos de 768px) */
-@media (max-width: 767px) {
-    .col-12 {
-        width: 33.33%; /* Tres productos por fila en pantallas pequeñas */
-        padding: 5px;  /* Espacio entre columnas */
-    }
-}
-
-/* En pantallas más grandes (mayores de 768px, como tabletas y PC) */
-@media (min-width: 768px) {
-    .col-md-4 {
-        width: 33.33%; /* Tres productos por fila en pantallas medianas (tabletas) */
-    }
-
-    .col-lg-3 {
-        width: 25%; /* Cuatro productos por fila en pantallas grandes (PC) */
     }
 }
