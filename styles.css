@@ -426,3 +426,15 @@ footer {
     margin-bottom: 1%;
     color: #333;
 }
+
+
+
+
+
+
+
+
+/* Cambiar el color del texto de 'PGames' a negro */
+.navbar-brand h1 {
+    color: #000; /* Negro */
+}
