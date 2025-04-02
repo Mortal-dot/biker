@@ -494,3 +494,53 @@ footer {
 }
 
 
+/* ---------------INICIO--------------- */
+
+.dark_color {
+    background-color: black;
+}
+
+.text {
+    color:white;
+}
+
+.body {
+    background-color: rgb(240, 248, 255);
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title_style {
+    background-color: #f11515;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.productsBorders {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 768px) {
+    .custom-img {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .custom-img-nosotros {
+        max-width: 60%;
+    }
+    .custom-img-secciones {
+        max-width: 70%;
+    }
+    .custom-img-navidad {
+        max-width: 90%;
+    }
+}
